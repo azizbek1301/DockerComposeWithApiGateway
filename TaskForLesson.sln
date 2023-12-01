@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NajotNur", "NajotNur\NajotNur.csproj", "{1AB576A1-B2AE-477D-89AA-57922926E2E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NajotNur", "NajotNur\NajotNur.csproj", "{1AB576A1-B2AE-477D-89AA-57922926E2E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{F2E8C1CD-CBF0-40EA-AA7D-EC66F4BBA47D}"
 EndProject
@@ -11,13 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EF844994-5FD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceOne", "ServiceOne", "{DB95DA4D-7FDF-4D9F-B6D9-D33B6C2017A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NajotNur.Domain", "NajotNur.Domain\NajotNur.Domain.csproj", "{CDC6A8F1-D7B8-4889-84E3-AD6C0CA7B403}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NajotNur.Domain", "NajotNur.Domain\NajotNur.Domain.csproj", "{CDC6A8F1-D7B8-4889-84E3-AD6C0CA7B403}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NajotNur.Infrastructure", "NajotNur.Infrastructure\NajotNur.Infrastructure.csproj", "{9F999C35-CEE4-4BD4-A23F-45BC59E17C49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NajotNur.Infrastructure", "NajotNur.Infrastructure\NajotNur.Infrastructure.csproj", "{9F999C35-CEE4-4BD4-A23F-45BC59E17C49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NajotNur.Application", "NajotNur.Application\NajotNur.Application.csproj", "{39D33E50-1DDF-4EA8-8ADD-FBA33969FA64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NajotNur.Application", "NajotNur.Application\NajotNur.Application.csproj", "{39D33E50-1DDF-4EA8-8ADD-FBA33969FA64}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5F26FE60-540E-44EB-84CF-2248C73F7ABD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIGateway", "APIGateway", "{A0E3C1F7-6CB6-4B27-B216-38831DE4C2E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGateway", "WebApplication1\APIGateway.csproj", "{56E70F3E-1C9F-4FD1-A566-2FB101C81B09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,10 @@ Global
 		{5F26FE60-540E-44EB-84CF-2248C73F7ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F26FE60-540E-44EB-84CF-2248C73F7ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F26FE60-540E-44EB-84CF-2248C73F7ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E70F3E-1C9F-4FD1-A566-2FB101C81B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E70F3E-1C9F-4FD1-A566-2FB101C81B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E70F3E-1C9F-4FD1-A566-2FB101C81B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E70F3E-1C9F-4FD1-A566-2FB101C81B09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +64,8 @@ Global
 		{CDC6A8F1-D7B8-4889-84E3-AD6C0CA7B403} = {DB95DA4D-7FDF-4D9F-B6D9-D33B6C2017A9}
 		{9F999C35-CEE4-4BD4-A23F-45BC59E17C49} = {DB95DA4D-7FDF-4D9F-B6D9-D33B6C2017A9}
 		{39D33E50-1DDF-4EA8-8ADD-FBA33969FA64} = {DB95DA4D-7FDF-4D9F-B6D9-D33B6C2017A9}
+		{A0E3C1F7-6CB6-4B27-B216-38831DE4C2E7} = {EF844994-5FD7-405B-A4B2-4B3770DB194E}
+		{56E70F3E-1C9F-4FD1-A566-2FB101C81B09} = {A0E3C1F7-6CB6-4B27-B216-38831DE4C2E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {833735C6-04E4-417A-8443-39882FD857EC}

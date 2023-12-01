@@ -1,0 +1,33 @@
+{
+  "Routes": [
+    // Orders webapi
+    {
+      "UpstreamPathTemplate": "/api/User/Get",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "najotnur",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User/Get"
+    },
+    {
+      "UpstreamPathTemplate": "/post",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "najotnur",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User/Post"
+    }
+    
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:8015"
+  }
+}

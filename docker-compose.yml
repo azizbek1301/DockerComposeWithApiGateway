@@ -1,19 +1,38 @@
 version: '3.4'
 
+networks:
+  backend:
+
 services:
 
   sqldata:
+    volumes:
+    - ./db:/var/opt/mssql/data
     image: mcr.microsoft.com/mssql/server:2019-latest
     environment:
       - SA_PASSWORD=Numsey#2022
       - ACCEPT_EULA=Y
     ports:
       - "8181:1433"
+    networks:
+      - backend
+    
 
 
-  
   najotnur:
     image: ${DOCKER_REGISTRY-}najotnur
     build:
       context: .
       dockerfile: NajotNur/Dockerfile
+    networks:
+        - backend
+  apigateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: WebApplication1/Dockerfile
+    ports:
+        - 7080:80
+    networks:
+      - backend
+     
